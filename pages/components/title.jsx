@@ -27,7 +27,7 @@ export default function Title(props) {
         }
     }, [themeId]);
 
-    function clickHandler(e: any) {
+    function clickHandler(e) {
         setThemeId(e.target.value);
         console.log(e.target.value);
 

@@ -1,11 +1,5 @@
 import { useEffect, MouseEvent } from "react";
 
-type NumberImput = string & {
-    currentTarget?: {
-        value: string;
-    };
-};
-
 export default function Body(props: any) {
     useEffect(() => {
         if (props.keyPress !== "") {
@@ -22,7 +16,7 @@ export default function Body(props: any) {
         }
     }, [props.keyPress]);
 
-    const numberHandler = (e: NumberImput | MouseEvent<HTMLButtonElement, globalThis.MouseEvent>): void => {
+    const numberHandler = (e: any): void => {
         let num: string = "0";
         e.currentTarget ? (num = e.currentTarget.value) : (num = e);
 
@@ -51,7 +45,7 @@ export default function Body(props: any) {
         }
     };
 
-    const opHandler = (e: NumberImput | MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
+    const opHandler = (e: any) => {
         let op: string = "";
         e.currentTarget ? (op = e.currentTarget.value) : (op = e);
         if (props.state === 1) {
