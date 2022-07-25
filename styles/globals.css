@@ -75,24 +75,6 @@ select {
     }
 }
 
-/* :root {
-    --bg-main: hsl(222, 26%, 31%);
-    --bg-keypad: hsl(223, 31%, 20%);
-    --bg-screen: hsl(224, 36%, 15%);
-
-    --accent1-key-bg: hsl(225, 21%, 49%);
-    --accent1-key-shdw: hsl(224, 28%, 35%);
-
-    --accent2-key-bg: hsl(6, 63%, 50%);
-    --accent2-key-shdw: hsl(6, 70%, 34%);
-
-    --main-key-bg: hsl(30, 25%, 89%);
-    --main-key-shdw: hsl(28, 16%, 65%);
-
-    --clr-text: hsl(221, 14%, 31%);
-    --clr-white: #ffffff;
-} */
-
 body {
     font-family: "League Spartan", sans-serif;
     background-color: var(--bg-main);
@@ -215,4 +197,39 @@ body {
 
 .equals-btn * {
     color: var(--accent2-key-txt);
+}
+
+@media only screen and (max-width: 768px) {
+    .calc-container {
+        width: 50%;
+        font-size: 2vw;
+        gap: 0.5rem;
+    }
+
+    .theme-widget {
+        gap: 0.1rem;
+    }
+
+    .selector-background {
+        height: 1.4em;
+        width: 5em;
+        padding-inline: 0.3em;
+        margin: 3px;
+    }
+
+    .toggle {
+        height: 0.8em;
+        width: 0.8em;
+        border-radius: 100%;
+        padding-inline: 0;
+    }
+
+    .display-container {
+        padding: 0.5em 1em;
+        font-size: 3vw;
+    }
+
+    .buttons-container {
+        font-size: 3vw;
+    }
 }
