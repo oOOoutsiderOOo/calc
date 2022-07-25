@@ -1,0 +1,19 @@
+:root {
+    --bg-main: hsl(222, 26%, 31%);
+    --bg-keypad: hsl(223, 31%, 20%);
+    --bg-screen: hsl(224, 36%, 15%);
+
+    --accent1-key-bg: hsl(225, 21%, 49%);
+    --accent1-key-shdw: hsl(224, 28%, 35%);
+
+    --accent2-key-bg: hsl(6, 63%, 50%);
+    --accent2-key-shdw: hsl(6, 70%, 34%);
+    --accent2-key-txt: #ffffff;
+
+    --main-key-bg: hsl(30, 25%, 89%);
+    --main-key-shdw: hsl(28, 16%, 65%);
+
+    --clr-text: hsl(221, 14%, 31%);
+    --clr-text-body: #ffffff;
+    --clr-white: #ffffff;
+}
