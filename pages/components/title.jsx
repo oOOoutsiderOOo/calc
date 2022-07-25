@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useState, useEffect, MouseEvent } from "react";
 import { theme1, theme2, theme3 } from "../../styles/themes";
 
